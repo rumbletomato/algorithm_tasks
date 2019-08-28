@@ -1,6 +1,6 @@
 import unittest
 
-from atasks.atask1 import find_longest
+from atasks.atask1.atask1 import find_longest
 
 
 class TestATask1(unittest.TestCase):
@@ -18,10 +18,6 @@ class TestATask1(unittest.TestCase):
 
     def test_atask1_4(self):
         result = find_longest(4, [1,4,5,50])
-        self.assertEqual([4, 2, 4, 5], result)
-
-    def test_atask1_5(self):
-        result = find_longest(4, [1, 10, 11, 13, 14, 49, 50, 52])
         self.assertEqual([4, 2, 4, 5], result)
 
 

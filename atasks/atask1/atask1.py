@@ -17,7 +17,3 @@ def find_longest(user_id, weeks):
     max_sequence = sorted(weeks_sequences, key=lambda x: len(x), reverse=True)[0]
 
     return [user_id, len(max_sequence), max_sequence[0], max_sequence[-1]]
-
-if __name__ == '__main__':
-    result = find_longest(1, [1, 10, 11, 13, 14, 49, 50, 52])
-    print(result)
