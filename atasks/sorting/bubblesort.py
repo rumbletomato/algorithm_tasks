@@ -36,7 +36,7 @@ def classic_bubblesort(arr: list) -> list:
 
 
 @check_input
-def shaker_bubblesort(arr: list) -> list:
+def cocktail_bubblesort(arr: list) -> list:
     direction = 1
     begin = -1
     end = len(arr)

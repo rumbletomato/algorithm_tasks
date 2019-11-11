@@ -1,7 +1,7 @@
 import random
 from unittest import TestCase
 
-from atasks.sorting.bubblesort import dummy_bubblesort, classic_bubblesort, shaker_bubblesort, comb_bubblesort
+from atasks.sorting.bubblesort import dummy_bubblesort, classic_bubblesort, cocktail_bubblesort, comb_bubblesort
 
 
 class TestSortingBubblesort(TestCase):
@@ -34,8 +34,8 @@ class TestSortingBubblesort(TestCase):
         candidate_dataset = classic_bubblesort(self.unsorted_dataset)
         self.assertListEqual(candidate_dataset, self.sorted_dataset)
 
-    def test_shaker_bubblesort(self) -> None:
-        candidate_dataset = shaker_bubblesort(self.unsorted_dataset)
+    def test_cocktail_bubblesort(self) -> None:
+        candidate_dataset = cocktail_bubblesort(self.unsorted_dataset)
         self.assertListEqual(candidate_dataset, self.sorted_dataset)
 
     def test_comb_bubblesort(self) -> None:
